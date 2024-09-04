@@ -1,6 +1,9 @@
 # Motion Design Agency
 
-[Live Demo](#) https://motiondesignagency.netlify.app
+![Lighthouse Performance Comparison](https://prnt.sc/5mxeyJPf9W7V)
+<!-- Added the link to the image -->
+
+Live Demo => https://motiondesignagency.netlify.app
 
 This project is a Motion Design Agency website created using **React** and
 **Tailwind CSS**. It was inspired by the design and functionality of the
