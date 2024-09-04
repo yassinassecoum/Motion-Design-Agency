@@ -1,6 +1,6 @@
 # Motion Design Agency
 
-![Lighthouse Performance Comparison](https://prnt.sc/5mxeyJPf9W7V)
+https://prnt.sc/5mxeyJPf9W7V
 
 <!-- Added the link to the image -->
 
