@@ -1,38 +1,340 @@
-.App {
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: black;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.marqueeLogos {
+  margin-top: 3rem;
+}
+.marqueeLogos img {
+  height: 30px;
+  cursor: pointer;
+  margin: 0 24px;
+}
+
+.pricingItem {
+  grid-column-gap: 0px;
+  grid-row-gap: 40px;
+  background-color: #fff;
+  border: 2px solid #c4c4c4;
+  border-radius: 16px;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 40px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.2;
+  transition: all 0.3s, transform 0.3s;
+  display: flex;
+  position: relative;
+}
+.pricingItem:hover {
+  border: 2px solid #fb6930;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 15px #0000001a;
+}
+
+.pricingTop {
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  position: relative;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  border-bottom: 2px solid #c4c4c4;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.subTitlePricing {
+  text-align: center;
+  color: #101010;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.pricingBottom {
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  grid-column-gap: 0px;
+  grid-row-gap: 16px;
+  border-bottom: 2px solid #c4c4c4;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  margin-bottom: auto;
+  padding-bottom: 40px;
+  display: flex;
+}
+.pricingFeature {
+  grid-column-gap: 16px;
+  grid-row-gap: 0px;
+  align-items: center;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  display: flex;
+}
+.checkLogo {
+  width: 24px;
+  height: 24px;
+  margin-right: 0;
+}
+.pricingFeature span {
+  text-align: left;
+  color: #101010;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.reviewTop {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  flex-direction: column;
+  flex: 0 auto;
+  align-items: flex-start;
+  display: flex;
+}
+.photoReview {
+  object-fit: cover;
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+}
+.userName {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  margin-bottom: 0;
+}
+.userRole {
+  color: #7f7f7f;
+  font-size: 16px;
+  text-align: left;
+  flex: 0 auto;
+  align-self: stretch;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+
+.seeMoreBtn {
+  color: #fff;
+  background-color: #fb6930;
+  border-style: none;
+  border-radius: 40px;
+  margin-top: 40px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 16px 32px;
+  font-size: 16px;
+  transition: background-color 0.4s;
+  cursor: pointer;
+}
+.seeMoreBtn:hover {
+  background-color: #101010;
+}
+.wrapMore {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.mainFaq {
+  grid-column-gap: 0px;
+  grid-row-gap: 40px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 60px;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.faqWrap {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  object-fit: contain;
+  flex-flow: column;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  place-content: space-between center;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  max-width: 900px;
+}
+.questionItem {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border: 1.5px solid #efefef;
+  border-radius: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  flex: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 86px;
+  padding: 0 20px 0 15px;
+  display: flex;
+  transition: all 0.4s ease-in-out;
+}
+
+.toggle-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.4s ease-in-out;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.toggle-title button {
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.questionItem p {
+  color: #414141;
+  text-align: left;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.questionItem h6 {
+  text-align: left;
+  font-size: 20px;
+  line-height: 24px;
+  color: #101010;
+  font-weight: 700;
+  width: 100%;
+  @media (max-width: 560px) {
+    max-width: 220px;
   }
-  to {
-    transform: rotate(360deg);
+}
+.q-con {
+  width: 100%;
+}
+.questionToggled {
+  height: 100%;
+}
+
+.wrapDevis {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-direction: column;
+  display: flex;
+}
+.wrapCheck {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  align-items: center;
+  display: flex;
+}
+.devisLogo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+.wrapCheck h4 {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+}
+.divider {
+  background-color: #e7e7e7;
+  color: #e7e7e7;
+  width: 100%;
+  height: 1px;
+}
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerContent a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.videoPlayer {
+  position: relative;
+  border: 3px solid #fb6930;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 681px !important;
+  height: 372px !important;
+  cursor: pointer;
+}
+.reactPlayer {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media (max-width: 1527px) {
+  .videoPlayer {
+    width: 674px !important;
+    height: 371px !important;
+  }
+}
+
+@media (max-width: 1246px) {
+  .videoPlayer {
+    width: 478px !important;
+    height: 269px !important;
+  }
+}
+@media (max-width: 1023px) {
+  .videoPlayer {
+    width: 736px !important;
+    height: 414px !important;
+  }
+}
+@media (max-width: 767px) {
+  .videoPlayer {
+    width: 608px !important;
+    height: 342px !important;
+  }
+}
+@media (max-width: 639px) {
+  .videoPlayer {
+    width: 320px !important;
+    height: 180px !important;
   }
 }
