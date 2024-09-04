@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import plus from "../assets/plus.svg";
 import minus from "../assets/minus.svg";
-import styled from "styled-components";
 
 function Question({ title, description }) {
   const [toggle, setToggle] = useState(false);
